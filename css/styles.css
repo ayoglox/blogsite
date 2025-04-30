@@ -1,0 +1,60 @@
+body {
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+/* Тёмная тема */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode .bg-gray-900 {
+    background-color: #1e1e1e !important;
+}
+
+body.dark-mode .bg-gray-800 {
+    background-color: #2d3748 !important;
+}
+
+body.dark-mode .text-white {
+    color: #ffffff !important;
+}
+
+body.dark-mode .text-gray-300 {
+    color: #d1d5db !important;
+}
+
+/* Светлая тема */
+body:not(.dark-mode) {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body:not(.dark-mode) .bg-gray-900 {
+    background-color: #f0f0f0 !important;
+}
+
+body:not(.dark-mode) .bg-gray-800 {
+    background-color: #ffffff !important;
+}
+
+body:not(.dark-mode) .text-white {
+    color: #000000 !important;
+}
+
+body:not(.dark-mode) .text-gray-300 {
+    color: #666666 !important;
+}
+
+button, a {
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover, a:hover {
+    transform: scale(1.05);
+}
+
+.edit-btn, .delete-btn {
+    min-width: 60px;
+    text-align: center;
+}
